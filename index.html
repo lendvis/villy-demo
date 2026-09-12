@@ -9,7 +9,7 @@
 <title>Чистый Вилли Самара</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Unbounded:wght@600;800&family=Rubik:wght@300;400;500;600&display=swap">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Rubik+Wet+Paint&family=Geologica:wght@300;400;500;600;700&display=swap">
 
 <style>
 /* Всё взято с их группы ВК vk.com/clean_willy: чёрное поле, жёлтые рваные буквы,
@@ -27,8 +27,8 @@
   --line:rgba(255,255,255,.13);
   --line-soft:rgba(255,255,255,.07);
 
-  --f-display:'Unbounded','Arial Black',system-ui,sans-serif;
-  --f-body:'Rubik','Helvetica Neue',system-ui,sans-serif;
+  --f-display:'Rubik Wet Paint','Arial Black',system-ui,sans-serif;
+  --f-body:'Geologica','Helvetica Neue',system-ui,sans-serif;
 
   --wrap:1200px;
   --pad:clamp(1rem,3.5vw,2.2rem);
@@ -41,6 +41,7 @@
 [hidden]{display:none!important}
 html{scroll-behavior:smooth}
 body{
+  font-synthesis-weight:none;
   margin:0;background:var(--black);color:var(--white);
   font-family:var(--f-body);font-weight:300;font-size:16px;line-height:1.6;
   -webkit-font-smoothing:antialiased;
@@ -49,7 +50,7 @@ img{display:block;max-width:100%}
 a{color:inherit}
 :focus-visible{outline:2px solid var(--yellow);outline-offset:3px;border-radius:2px}
 .wrap{width:100%;max-width:var(--wrap);margin:0 auto;padding-inline:var(--pad)}
-h1,h2,h3{font-family:var(--f-display);font-weight:800;line-height:1.02;margin:0;text-transform:uppercase;letter-spacing:-.01em;text-wrap:balance}
+h1,h2,h3{font-family:var(--f-display);font-weight:400;line-height:1.12;margin:0;text-transform:uppercase;letter-spacing:-.01em;text-wrap:balance}
 p{margin:0}
 
 .tread{height:14px;background-image:var(--tread);background-repeat:repeat-x;background-size:auto 14px}
@@ -60,10 +61,10 @@ p{margin:0}
 .top-in{display:flex;align-items:center;gap:1rem;height:62px}
 .logo{display:inline-flex;flex-direction:column;line-height:1;text-decoration:none}
 .logo .s{font-family:var(--f-body);font-weight:600;font-size:9px;letter-spacing:.34em;color:var(--white);text-transform:uppercase}
-.logo .n{font-family:var(--f-display);font-weight:800;font-size:18px;color:var(--yellow);text-transform:uppercase;letter-spacing:-.02em;margin-top:.18em}
+.logo .n{font-family:var(--f-display);font-weight:400;font-size:18px;color:var(--yellow);text-transform:uppercase;letter-spacing:-.02em;margin-top:.18em}
 .demo-tag{font-size:9px;letter-spacing:.16em;text-transform:uppercase;color:var(--smoke);border:1px solid var(--line);border-radius:999px;padding:.25em .65em}
 .top .sp{margin-left:auto}
-.tel{font-family:var(--f-display);font-weight:600;font-size:14px;text-decoration:none;white-space:nowrap}
+.tel{font-family:var(--f-display);font-weight:400;font-size:14px;text-decoration:none;white-space:nowrap}
 .tel:hover{color:var(--yellow)}
 @media(max-width:760px){.demo-tag,.top .btn{display:none}}
 @media(max-width:430px){.tel{font-size:12px}}
@@ -79,7 +80,7 @@ p{margin:0}
 .hero-cta{display:flex;flex-wrap:wrap;gap:.7rem;margin-top:1.8rem}
 .hero-ph{position:relative;border:2px solid var(--yellow);overflow:hidden;aspect-ratio:4/3}
 .hero-ph img{width:100%;height:100%;object-fit:cover}
-.hero-stamp{position:absolute;left:0;bottom:0;background:var(--yellow);color:var(--black);font-family:var(--f-display);font-weight:800;font-size:12px;text-transform:uppercase;padding:.5em 1em;letter-spacing:.02em}
+.hero-stamp{position:absolute;left:0;bottom:0;background:var(--yellow);color:var(--black);font-family:var(--f-body);font-weight:600;font-size:12px;text-transform:uppercase;padding:.5em 1em;letter-spacing:.02em}
 
 .btn{font-family:var(--f-body);font-weight:600;font-size:14.5px;text-decoration:none;cursor:pointer;
   padding:.85em 1.6em;border:2px solid transparent;display:inline-flex;align-items:center;justify-content:center;gap:.5rem;
@@ -92,7 +93,7 @@ p{margin:0}
 
 .facts{display:flex;flex-wrap:wrap;gap:.4rem 2rem;margin-top:2rem;padding-top:1.3rem;border-top:1px solid var(--line-soft)}
 .fact{display:flex;align-items:baseline;gap:.45rem}
-.fact b{font-family:var(--f-display);font-weight:800;font-size:1.2rem;font-variant-numeric:tabular-nums}
+.fact b{font-family:var(--f-display);font-weight:400;font-size:1.2rem;font-variant-numeric:tabular-nums}
 .fact .y{color:var(--yellow)}
 .fact span{font-size:12px;color:var(--smoke)}
 
@@ -124,18 +125,18 @@ section.blk{padding-block:clamp(2.6rem,5.5vw,4.6rem)}
 /* ── Что моем ── */
 .what{display:grid;grid-template-columns:repeat(auto-fit,minmax(150px,1fr));gap:.6rem}
 .what div{border:1px solid var(--line);padding:1.1rem 1rem;text-align:center}
-.what b{display:block;font-family:var(--f-display);font-weight:600;font-size:15px;text-transform:uppercase;letter-spacing:.02em}
+.what b{display:block;font-family:var(--f-display);font-weight:400;font-size:15px;text-transform:uppercase;letter-spacing:.02em}
 
 /* ── Цены ── */
 .price{display:grid;grid-template-columns:repeat(auto-fit,minmax(190px,1fr));gap:.7rem}
 .price div{border:1px solid var(--line);padding:1rem 1.1rem;display:flex;flex-direction:column;gap:.25rem}
 .price b{font-size:14.5px;font-weight:500}
-.price .v{font-family:var(--f-display);font-weight:800;font-size:1.5rem;color:var(--yellow);font-variant-numeric:tabular-nums;margin-top:.2rem}
+.price .v{font-family:var(--f-display);font-weight:400;font-size:1.5rem;color:var(--yellow);font-variant-numeric:tabular-nums;margin-top:.2rem}
 .price-note{margin-top:1.1rem;font-size:13px;color:var(--smoke);max-width:56ch}
 
 /* ── Отзывы ── */
 .rate{display:flex;align-items:baseline;gap:.7rem;margin-bottom:1.5rem}
-.rate b{font-family:var(--f-display);font-weight:800;font-size:2.8rem;color:var(--yellow);line-height:.9}
+.rate b{font-family:var(--f-display);font-weight:400;font-size:2.8rem;color:var(--yellow);line-height:.9}
 .rate span{font-size:13px;color:var(--smoke)}
 .revs{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:.9rem;align-items:start}
 .rev{background:var(--black-2);border-top:3px solid var(--yellow);padding:1.3rem;display:flex;flex-direction:column;gap:.8rem}
@@ -157,7 +158,7 @@ section.blk{padding-block:clamp(2.6rem,5.5vw,4.6rem)}
 @media(max-width:460px){.f-two{grid-template-columns:1fr}}
 .form .err{font-size:12px;color:#ff6b52}
 .done{border:2px solid var(--yellow);padding:1.1rem 1.2rem;display:flex;flex-direction:column;gap:.5rem}
-.done b{font-family:var(--f-display);font-weight:600;font-size:14px;text-transform:uppercase;color:var(--yellow)}
+.done b{font-family:var(--f-display);font-weight:400;font-size:14px;text-transform:uppercase;color:var(--yellow)}
 .done p{font-size:13.5px;color:var(--smoke-lit);line-height:1.55}
 .done a{color:var(--yellow);font-weight:500}
 
@@ -296,7 +297,7 @@ footer{background:var(--black);padding-block:2.2rem;color:var(--smoke)}
   <section class="blk" style="background:var(--black-2)">
     <div class="wrap">
       <div class="blk-h">
-        <h2>Цены, которые опубликованы</h2>
+        <h2>Цены</h2>
         <p>Это позиции из их каталога. Мойка, химчистка и полировка считаются по машине — точную сумму скажут по телефону.</p>
       </div>
       <div class="price">
